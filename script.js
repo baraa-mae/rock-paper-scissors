@@ -21,33 +21,33 @@ function playGame() {
   function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) console.log("Draw");
 
-    if (humanChoice == 0 && computerChoice == 1) {
+    else if (humanChoice == 0 && computerChoice == 1) {
       console.log("You lose, Paper beats Rock");
       computerScore++;
     }
 
-    if (humanChoice == 0 && computerChoice == 2) {
+    else if (humanChoice == 0 && computerChoice == 2) {
       console.log("You win!! Rock beats Scissors");
       humanScore++;
     }
 
-    if (humanChoice == 1 && computerChoice == 0) {
+    else if (humanChoice == 1 && computerChoice == 0) {
       console.log("You win, Paper beats Rock");
       humanScore++;
     }
 
-    if (humanChoice == 1 && computerChoice == 2) {
+    else if (humanChoice == 1 && computerChoice == 2) {
       console.log("You lose, Scissors beat Paper");
       computerScore++;
     }
 
-    if (humanChoice == 2 && computerChoice == 0) {
+    else if (humanChoice == 2 && computerChoice == 0) {
       console.log("You lose, Rock beats Scissors");
       computerScore++;
     }
 
-    if (humanChoice == 2 && computerChoice == 1) {
-      console.log("You WIn!! Scissors beat Paper");
+    else {
+      console.log("You Win!! Scissors beat Paper");
       humanScore++;
     }
   }
